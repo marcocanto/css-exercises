@@ -1,28 +1,69 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0;
-  min-height: 100vh;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .header {
-  height: 72px;
-  background: darkmagenta;
-  color: white;
+	background: darkmagenta;
+	color: white;
+	font-weight: 900;
+	font-size: 32px;
+	padding: 0 16px;
+	margin: 0;
 }
 
 .footer {
-  height: 72px;
-  background: #eee;
-  color: darkmagenta;
+	height: 72px;
+	background: #eee;
+	color: darkmagenta;
+	display: flex;
+	margin-top: auto;
+}
+
+.content {
+	display: flex;
+	margin: 0;
+	flex-grow: 1;
 }
 
 .sidebar {
-  width: 300px;
-  background: royalblue;
+	width: 300px;
+	background: royalblue;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 32px;
+	gap: 16px;
+	flex-grow: 1;
 }
 
 .card {
-  border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-  border-radius: 4px;
+	width: 250px;
+	border: 1px solid #eee;
+	box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
+	border-radius: 4px;
+	padding: 16px;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+}
+
+ul {
+	padding-left: 16px;
 }
